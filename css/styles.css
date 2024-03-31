@@ -1,0 +1,363 @@
+body {
+    font-family: cursive;
+    border: 5px solid transparent;
+    border-color: #010075;
+    border-radius: 30px;
+}
+
+.contenido {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header {
+    font-family: 'Trebuchet MS';
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #010075;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    background-color: #0300bd;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #46fff0;
+    background-color: #010075;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #46fff0;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(214, 214, 214)
+}
+
+#contacto {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#formularioColaboracion label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formularioColaboracion input,
+#formularioColaboracion textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#formularioColaboracion button {
+    background-color: #535353;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+#formularioColaboracion button:hover {
+    background-color: #0300bd;
+}
+
+footer {
+    border-radius: 20px;
+    background-color: #010047;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+    color: blue;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+ul,
+ol {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    color: #0051ff;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.imgs img {
+    margin: 0 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imgs:hover {
+    transform: scale(1.07);
+}
+
+.map {
+    display: inline-block;
+    margin: 0 auto;
+    width: 30%;
+    height: 400px;
+    margin: 0 15px;
+    border-radius: 12px;
+}
+
+.spotify {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+#slider {
+    margin: 0 auto;
+    width: 570px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(1) {
+    border-radius: 100%;
+    background: url(https://acortar.link/WUBjD3);
+    float: right;
+    margin: 0 -70px 0 0;
+    display: block;
+}
+
+#slide1:checked~#controls label:nth-child(3),
+#slide2:checked~#controls label:nth-child(1),
+#slide3:checked~#controls label:nth-child(2) {
+    border-radius: 100%;
+    background: url(https://acortar.link/WUBjD3);
+    float: left;
+    margin: 0 0 0 -70px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3) {
+    background: #444;
+}
+
+.suma {
+    text-align: center;
+}
+
+.suma p {
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+#dom {
+    margin: 0 auto;
+    margin: 10px;
+    padding: 5px;
+    border: 10px solid #ccc;
+}
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 1px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#scrollToTop:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    p,
+    ul,
+    ol,
+    li,
+    a {
+        font-size: 16px;
+    }
+}

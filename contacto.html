@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritmo guarachero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Ritmo guarachero</h1>
+        <h2>DJ Matt</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="influencias_proyectos.html">Influencias & Proyectos</a></li>
+            <li><a href="sueños_consejos.html">Sueños & Consejos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <section id="contacto">
+            <h2 class="text">Solicitud de colaboración</h2>
+            <p>¿Interesado en colaborar con DJ Matt en un privadito de guaracha? Completa el formulario a continuación.
+            </p>
+            <form id="formularioColaboracion">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+            <div id="mensajeExito" style="display: none;">¡Solicitud enviada con éxito!</div>
+            <div id="mensajeError" style="display: none;">Hubo un error al enviar la solicitud.</div>
+        </section>
+
+
+        <div align="left" style="font-family: cursive;">
+            <h2 class="text">Contacto</h2>
+            <p style="font-size: 20px;">Sígueme en mis redes sociales:</p>
+            <ul style="font-size: 20px;">
+                <li><a href="https://www.facebook.com/johnmespinosa07" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/johnmespinosa07" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com/johnmespinosa07" target="_blank">Twitter</a></li>
+                <li><a href="https://www.tiktok.com/@johnmespinosa" target="_blank">Tiktok</a></li>
+                <li><a href="https://api.whatsapp.com/send/?phone=%2B573157118023&text&type=phone_number&app_absent=0"
+                        target="_blank">WhatsApp</a></li>
+            </ul>
+        </div>
+
+        <div class="suma">
+            <h2 class="text">Suma de 0 hasta n</h2>
+            <label for="numeroInput">Ingresa un número:</label>
+            <input type="number" id="numeroInput">
+
+            <button onclick="calcularSuma()">Calcular</button>
+            <p id="resultado"></p>
+        </div>
+
+        <img id="scrollToTop" src="https://cutt.ly/ow3Wh7eq">
+
+        <h2 class="text">(DOM) Agregar - Modificar - Eliminar</h2>
+        <main>
+            <div id="dom">
+                <p id="text-dom">Párrafo actual</p>
+            </div>
+            <button onclick="agregarParrafo()">Agregar párrafo</button>
+            <button onclick="modificarTexto()">Modificar texto</button>
+            <button onclick="eliminarParrafo()">Eliminar párrafo</button><br><br><br>
+        </main>
+    </div>
+    <footer>
+        <p class="footer-text">© 2024 DJ Matt - Guaracha Beat Academy</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
